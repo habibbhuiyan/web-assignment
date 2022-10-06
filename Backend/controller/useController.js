@@ -27,7 +27,7 @@ exports.usersData = (req, res, next)=>{
 
 exports.getName = (req, res, next) => {
   
-  req.Name = 'Jahid Hasan'
+  req.Name = 'Habib Bhuiyan'
   next()
 }
 

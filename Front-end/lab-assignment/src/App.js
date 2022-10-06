@@ -6,7 +6,7 @@ function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   useEffect(()=>{
-    fetch("http://localhost:5000/api/home-page")
+    fetch("http://localhost:5000/api/main-page")
     .then(res=>res.json())
     .then(result=>{
       console.log(result)
@@ -20,7 +20,7 @@ function App() {
     email: email,
     password: password
    }
-   fetch("http://localhost:5000/api/user-data",{
+   fetch("http://localhost:5000/api/user-information",{
     method: "POST",
     headers: {
       "content-type": "application/json"
